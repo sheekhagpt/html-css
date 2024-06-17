@@ -1,0 +1,12 @@
+.img{
+    width: 50vw;
+    margin-left: 25%;
+    height: 55vw;
+}   
+
+.hh{
+    border: rgba(90, 128, 0, 0.767);
+    color: black;
+    position: absolute;
+    padding: 24px;      
+}

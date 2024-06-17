@@ -1,0 +1,34 @@
+    .custom{
+        text-align: center;
+        color: #ffff;;
+    }
+    .abc{
+        background-image: url(https://cdn.create.vista.com/api/media/small/179257516/stock-photo-old-vintage-books);
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+    }
+    .t1{
+        margin-left: 38%;
+        color: white;
+    }
+    .t2{
+        margin-left: 30%;
+        color: white;
+    }
+    .t3{
+        margin-left: 30%;
+        color: white;
+    }
+    .t4{
+        margin-left: 47%;
+        background-color: orange;
+        height: 30px;
+        width: 70px;
+        border: none;
+    }
+    .t5{
+        text-decoration: underline;
+        color: white;
+        margin-left: 44%;
+    }

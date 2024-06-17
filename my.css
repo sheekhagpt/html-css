@@ -1,0 +1,15 @@
+p{
+    border: solid 3px black;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+}
+.a{
+    padding: 10px 40px 20px 5px;
+    text-align: center;
+    margin: 10px 20px 0px 5px;
+}
+.ab{
+    padding: 20px;
+    text-align: center;
+}
