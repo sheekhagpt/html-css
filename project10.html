@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="project10.css">
+</head>
+<body>
+    <h1 class="a1"> Welcome To My Gallery</h1>
+    <div class="full-img" id="fullImgBox" style="display: none; align-items: center; justify-content: center;">
+        <img src="" id="fullImg">
+        <span onclick="closeFullImg()" style="position: absolute; top: 20px; right: 20px; color: white; font-size: 2rem; cursor: pointer;">X</span>
+    </div>
+    <div class="image-gallery">
+        <img src="https://img.freepik.com/premium-photo/great-white-pony-amitava0112-advanced-workmanship-simulated-intelligence-creatures-birds-fish-ponies-artpal_1302508-493.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid" onclick="openFullImg(this)"> 
+        <img src="https://img.freepik.com/premium-photo/peacock-feather-feathers-dark-blue-background-vintage-still-life_1029622-88936.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid" onclick="openFullImg(this)">
+        <img src="https://img.freepik.com/premium-photo/poster-woman-with-woman-sari-woman-pink-sari_1100728-456.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid" onclick="openFullImg(this)">
+        <img src=" https://img.freepik.com/premium-photo/krishna-janmashtami-festival-india-radha-krishna-symbol-divine-love_298291-1845.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid   " onclick="openFullImg(this.src)">
+        <img src="https://img.freepik.com/premium-photo/painting-peacock-with-butterflies-butterflies_1309778-9785.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid" onclick="openFullImg(this)">
+        <img src="https://img.freepik.com/premium-photo/cute-little-lord-krishna-jee_1037680-37947.jpg?size=626&ext=jpg&ga=GA1.1.418286153.1715525510&semt=ais_hybrid" onclick="openFullImg(this)">        
+        <img src="https://img.freepik.com/free-photo/beautiful-swan-cubs-pond-beautiful-natural-colored-background-with-wild-animals-springtime_1161-355.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid="openFullImg(this)>
+        <img src="https://img.freepik.com/premium-photo/cow-with-tag-ear-is-looking-camera_1244071-109494.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid" onclick="openFullImg(this)">
+        <img src="https://img.freepik.com/premium-photo/colorful-photo-images-very-nice-photo-beautiful-photo-se-different-photo-scenery-photo-ai-generated_1028782-466017.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid" onclick="openFullImg(this)">
+        <img src="https://img.freepik.com/free-vector/summer-backgroud-with-sunset-palm-trees-silhouette_23-2147833099.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid" onclick="openFullImg(this)">
+        <img src="https://img.freepik.com/free-vector/romantic-bird-couple-background_23-2148003077.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid"onclick="openFullImg(this)">
+        <img src="https://img.freepik.com/premium-photo/flower-that-is-bunch-flowers_1259211-12152.jpg?ga=GA1.1.418286153.1715525510&semt=ais_hybrid"onclick="openFullImg(this)">
+
+        
+        
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(imgElement) {
+            fullImg.src = imgElement.src;
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(pic) {
+            fullImgBox.style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+.a1{
+    text-align: center ;
+}
+
+.image-gallery {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Creates space between images */
+}
+
+.image-gallery img {
+    width: 100%;  /* Ensure images fill their grid cells */
+    height: auto;
+    border: 2px solid #ccc; /* Optional: Add a border for visibility */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.image-gallery img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 7px rgba(68,77,136,0.2);
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensures it appears above other elements */
+    display: none; /* Hidden by default, shown when an image is clicked */
+    align-items: center;
+    justify-content: center;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px; /* Optional: Add slight rounding to the image in full view */
+}
+
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add a smooth color transition for the close button */
+}
+
+.full-img span:hover {
+    color: #f00; /* Change the close button color on hover */
+}
